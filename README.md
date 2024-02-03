@@ -2,7 +2,8 @@
 The aim of this project is to control your home remotely by controlling different systems such as :- Light system - Fans - Garage door - Home door
 #Overiew
 Controlling different systems is done by Master Microcontroller ATmega32. This is master will be responsible of any input data in the system.
--Master MCU will ask the user to choose one of 3 modes:
+# Master 
+MCU will ask the user to choose one of 3 modes:
 			1- Open SmartSystem
 			2- Change Password
 			3- Add User
@@ -11,9 +12,8 @@ Controlling different systems is done by Master Microcontroller ATmega32. This i
 			case 1: Wrong ID >> master mcu will ask you about a valid ID
 			case 2: Your password is true>> Now you can control any electronic device in your home via your smart phone
 			case 3: Your password is wrong>> Master mcu will ask you to enter your password again for more 3 times if ur password still wrong, Master mcu return you to the main menu.
-		
-		
-		2 - MCU2 work as Slave and it controls the following behaviors:
+   # Slave
+	2 - MCU2 work as Slave and it controls the following behaviors:
 			1 - if temperature is bigger than 35C fan will work
 			2 - Based on Ambiant light (data came from LDR sensor) your home light will turns on 
 			3 - if user pressed on button '1' send via Bluetooth >> the door will open (Servo motor will move to angle 180)
@@ -42,7 +42,7 @@ Controlling different systems is done by Master Microcontroller ATmega32. This i
 		3 - Master mcu will ask you to confirm your password
 			case 1: if your confirmation password is True >> Master mcu will return back to main menu
 			case 2: if your confirmation password is wrong >> Master mcu will print Wrong password and return back to main menu 
-#Componants
+# Componants
 1- Atmega32 microcontroller 	QTY>2
 2- LCD 16X2						QTY>1
 3- KeyPad 4x4					QTY>1
